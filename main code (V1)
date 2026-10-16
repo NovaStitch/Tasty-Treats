@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261016-04-d5e3a25","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Treats</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --charcoal: #171717;
+      --graphite: #2a2a2a;
+      --gray: #9a9a9a;
+      --silver: #d7d7d7;
+      --white: #f7f7f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      width: 100%;
+      min-width: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    button, input, textarea { font: inherit; }
+
+    .display-font { font-family: "Fraunces", serif; }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(255,255,255,.075), transparent 24rem),
+        var(--black);
+    }
+
+    .screen[hidden] { display: none !important; }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(11, 11, 11, .96);
+      border-bottom: 1px solid #4a4a4a;
+      backdrop-filter: blur(14px);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      overflow: hidden;
+      border: 1px solid #888;
+      border-radius: 50%;
+      background: #202020;
+      box-shadow: inset 0 0 0 4px #101010;
+    }
+
+    .nav-link {
+      position: relative;
+      color: #e8e8e8;
+      padding: .55rem .15rem;
+      transition: color .2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible,
+    .nav-link.is-active { color: #ffffff; }
+
+    .nav-link.is-active::after {
+      position: absolute;
+      bottom: -.36rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: "";
+      background: #f7f7f7;
+    }
+
+    .menu-popover {
+      position: absolute;
+      top: calc(100% + 13px);
+      left: 50%;
+      width: 225px;
+      padding: 1rem;
+      background: #1b1b1b;
+      border: 1px solid #606060;
+      box-shadow: 0 18px 48px rgba(0,0,0,.55);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateX(-50%) translateY(-6px);
+      transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+    }
+
+    .menu-trigger:hover .menu-popover,
+    .menu-trigger:focus-within .menu-popover {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .hero-panel {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 535px;
+      overflow: hidden;
+      border-bottom: 1px solid #454545;
+      background: #111;
+    }
+
+    .hero-panel::after {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      content: "";
+      background: linear-gradient(90deg, rgba(5,5,5,.97) 5%, rgba(5,5,5,.82) 45%, rgba(5,5,5,.28) 100%);
+    }
+
+    .hero-panel img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1) contrast(1.12);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .silver-rule {
+      display: inline-block;
+      width: 58px;
+      height: 2px;
+      background: #e9e9e9;
+    }
+
+    .mono-button {
+      border: 1px solid #f7f7f7;
+      background: #f7f7f7;
+      color: #111;
+      font-weight: 800;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
+    }
+
+    .mono-button:hover {
+      background: #1d1d1d;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .mono-button:disabled {
+      cursor: wait;
+      opacity: .62;
+      transform: none;
+    }
+
+    .section-black { background: #0b0b0b; }
+
+    .section-light {
+      background: #ededed;
+      color: #151515;
+    }
+
+    .product-card {
+      overflow: hidden;
+      border: 1px solid #4d4d4d;
+      background: #191919;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .product-card:hover {
+      border-color: #e4e4e4;
+      transform: translateY(-6px);
+    }
+
+    .product-photo {
+      width: 100%;
+      height: 215px;
+      object-fit: cover;
+      filter: grayscale(1) contrast(1.08);
+      background: #2b2b2b;
+    }
+
+    .price-tag {
+      min-width: 54px;
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      background: #eeeeee;
+      color: #101010;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .menu-row { border-bottom: 1px solid #4b4b4b; }
+
+    .contact-field {
+      width: 100%;
+      padding: .82rem .9rem;
+      border: 1px solid #797979;
+      border-radius: .25rem;
+      background: #fff;
+      color: #161616;
+    }
+
+    .contact-field::placeholder { color: #777; }
+
+    .contact-field:focus {
+      border-color: #111;
+      outline: 3px solid rgba(17,17,17,.2);
+      outline-offset: 2px;
+    }
+
+    .status-message { min-height: 1.5rem; }
+
+    .fade-in { animation: rise .6s ease both; }
+    .fade-delay { animation: rise .7s .12s ease both; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    button:focus-visible,
+    .nav-link:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .hero-panel { min-height: 500px; }
+      .hero-panel::after { background: linear-gradient(90deg, rgba(5,5,5,.96), rgba(5,5,5,.62)); }
+      .nav-link { font-size: .78rem; }
+      .brand-name-text { font-size: .92rem; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/7825871aa95c503d.editing_sdk.js" type="text/javascript" integrity="sha512-2lFhP7fVLyI/xh1XVD1wGvcEUDBQxBW40AsWL6PQ5RZg0/hxM41hBHE/wQF1zqhE8vvzASF/osL1pnlucLWnaQ=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="app-shell">
+   <header data-template-id="site-header" class="site-nav canva-header">
+    <nav class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4" aria-label="Primary navigation">
+     <button type="button" class="flex items-center gap-3 text-left" data-view-target="home" aria-label="Go to Tasty Treats home"> <span class="brand-mark" aria-hidden="true"> <img data-template-id="logo-image" class="canva-image w-full h-full object-contain" loading="lazy"> </span> <span data-template-id="brand-name" class="canva-text brand-name-text display-font font-bold tracking-wide"></span> </button>
+     <div class="flex items-center gap-4 sm:gap-6 font-bold text-sm">
+      <button data-template-id="nav-home" class="canva-button nav-link is-active" type="button" data-view-target="home"></button>
+      <div class="menu-trigger relative">
+       <button class="canva-button nav-link flex items-center gap-1" type="button" data-view-target="menu" aria-haspopup="true"> <span data-template-id="nav-menu-text" class="canva-text"></span> <i data-lucide="chevron-down" aria-hidden="true" style="width:15px;height:15px"></i> </button>
+       <div class="menu-popover" aria-label="Quick menu prices">
+        <p data-template-id="dropdown-title" class="canva-text text-xs font-bold uppercase tracking-widest mb-2"></p>
+        <div class="space-y-2 text-sm">
+         <div class="flex justify-between gap-4"><span data-template-id="drop-sourbombs" class="canva-text"></span><span data-template-id="drop-sourbombs-price" class="canva-text font-bold"></span>
+         </div>
+         <div class="flex justify-between gap-4"><span data-template-id="drop-sherbet" class="canva-text"></span><span data-template-id="drop-sherbet-price" class="canva-text font-bold"></span>
+         </div>
+         <div class="flex justify-between gap-4"><span data-template-id="drop-go-slos" class="canva-text"></span><span data-template-id="drop-go-slos-price" class="canva-text font-bold"></span>
+         </div>
+         <div class="flex justify-between gap-4"><span data-template-id="drop-sprite" class="canva-text"></span><span data-template-id="drop-sprite-price" class="canva-text font-bold"></span>
+         </div>
+         <div class="flex justify-between gap-4"><span data-template-id="drop-coke" class="canva-text"></span><span data-template-id="drop-coke-price" class="canva-text font-bold"></span>
+         </div>
+         <div class="flex justify-between gap-4"><span data-template-id="drop-cola-tonic" class="canva-text"></span><span data-template-id="drop-cola-tonic-price" class="canva-text font-bold"></span>
+         </div>
+        </div>
+       </div>
+      </div><button data-template-id="nav-about" class="canva-button nav-link" type="button" data-view-target="about"></button> <button data-template-id="nav-info" class="canva-button nav-link" type="button" data-view-target="about"></button> <button data-template-id="nav-contact" class="canva-button nav-link" type="button" data-view-target="contact"></button> <a data-template-id="nav-call" class="canva-link nav-link" href="tel:+27631028643"></a>
+     </div>
+    </nav>
+   </header>
+   <main>
+    <section id="home-screen" class="screen" data-screen="home">
+     <section class="hero-panel">
+      <img data-template-id="hero-image" class="canva-image" loading="lazy">
+      <div class="hero-content w-full max-w-6xl mx-auto px-6 sm:px-10 py-16">
+       <p data-template-id="hero-kicker" class="canva-text fade-in text-sm sm:text-base font-bold uppercase tracking-[.22em] mb-5"></p>
+       <h1 data-template-id="hero-title" class="canva-text display-font fade-delay font-bold max-w-3xl leading-tight text-5xl sm:text-6xl lg:text-7xl"></h1>
+       <p data-template-id="hero-copy" class="canva-text fade-delay max-w-xl text-lg mt-6 leading-relaxed"></p><button data-template-id="hero-menu-button" class="canva-button mono-button mt-8 px-6 py-3 rounded-sm" type="button" data-view-target="menu"></button>
+      </div>
+     </section>
+     <section class="section-black py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-6 sm:px-10">
+       <div class="flex items-end justify-between gap-4 mb-10">
+        <div>
+         <p data-template-id="popular-kicker" class="canva-text text-sm font-bold uppercase tracking-[.2em] mb-3"></p>
+         <h2 data-template-id="popular-heading" class="canva-text display-font font-bold text-4xl sm:text-5xl"></h2>
+        </div><span class="silver-rule mb-3"></span>
+       </div>
+       <div class="grid md:grid-cols-3 gap-6">
+        <article data-template-id="go-slos-card" class="canva-card product-card">
+         <img data-template-id="go-slos-image" class="canva-image product-photo" loading="lazy">
+         <div class="p-5 flex items-center justify-between gap-4">
+          <div>
+           <h3 data-template-id="go-slos-name" class="canva-text font-bold text-xl"></h3>
+           <p data-template-id="go-slos-description" class="canva-text mt-1 text-sm"></p>
+          </div><span data-template-id="go-slos-price" class="canva-tag price-tag"></span>
+         </div>
+        </article>
+        <article data-template-id="sprite-card" class="canva-card product-card">
+         <img data-template-id="sprite-image" class="canva-image product-photo" loading="lazy">
+         <div class="p-5 flex items-center justify-between gap-4">
+          <div>
+           <h3 data-template-id="sprite-name" class="canva-text font-bold text-xl"></h3>
+           <p data-template-id="sprite-description" class="canva-text mt-1 text-sm"></p>
+          </div><span data-template-id="sprite-price" class="canva-tag price-tag"></span>
+         </div>
+        </article>
+        <article data-template-id="sherbet-card" class="canva-card product-card">
+         <img data-template-id="sherbet-image" class="canva-image product-photo" loading="lazy">
+         <div class="p-5 flex items-center justify-between gap-4">
+          <div>
+           <h3 data-template-id="sherbet-name" class="canva-text font-bold text-xl"></h3>
+           <p data-template-id="sherbet-description" class="canva-text mt-1 text-sm"></p>
+          </div><span data-template-id="sherbet-price" class="canva-tag price-tag"></span>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section class="section-light py-16 sm:py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+       <p data-template-id="home-contact-kicker" class="canva-text font-bold uppercase tracking-[.2em] text-sm mb-3"></p>
+       <h2 data-template-id="home-contact-heading" class="canva-text display-font font-bold text-4xl sm:text-5xl"></h2>
+       <p data-template-id="home-contact-copy" class="canva-text max-w-2xl mx-auto mt-5 leading-relaxed"></p><button data-template-id="home-contact-button" class="canva-button mono-button mt-7 px-6 py-3 rounded-sm" type="button" data-view-target="contact"></button>
+      </div>
+     </section>
+    </section>
+    <section id="menu-screen" class="screen section-black py-16 sm:py-24" data-screen="menu" hidden>
+     <div class="max-w-4xl mx-auto px-6 sm:px-10">
+      <p data-template-id="menu-screen-kicker" class="canva-text text-sm font-bold uppercase tracking-[.2em] mb-3"></p>
+      <h1 data-template-id="menu-screen-heading" class="canva-text display-font font-bold text-5xl sm:text-6xl"></h1>
+      <p data-template-id="menu-screen-copy" class="canva-text max-w-2xl mt-5 leading-relaxed"></p>
+      <div data-template-id="menu-list-panel" class="canva-panel mt-10 p-6 sm:p-8 border border-[#555]">
+       <h2 data-template-id="menu-sweets-heading" class="canva-text display-font font-bold text-2xl mb-4"></h2>
+       <div class="menu-row py-4 flex justify-between gap-5"><span data-template-id="menu-sourbombs" class="canva-text font-semibold"></span><span data-template-id="menu-sourbombs-price" class="canva-text font-bold"></span>
+       </div>
+       <div class="menu-row py-4 flex justify-between gap-5"><span data-template-id="menu-sherbet" class="canva-text font-semibold"></span><span data-template-id="menu-sherbet-price" class="canva-text font-bold"></span>
+       </div>
+       <h2 data-template-id="menu-drinks-heading" class="canva-text display-font font-bold text-2xl mt-9 mb-4"></h2>
+       <div class="menu-row py-4 flex justify-between gap-5"><span data-template-id="menu-go-slos" class="canva-text font-semibold"></span><span data-template-id="menu-go-slos-price" class="canva-text font-bold"></span>
+       </div>
+       <div class="menu-row py-4 flex justify-between gap-5"><span data-template-id="menu-sprite" class="canva-text font-semibold"></span><span data-template-id="menu-sprite-price" class="canva-text font-bold"></span>
+       </div>
+       <div class="menu-row py-4 flex justify-between gap-5"><span data-template-id="menu-coke" class="canva-text font-semibold"></span><span data-template-id="menu-coke-price" class="canva-text font-bold"></span>
+       </div>
+       <div class="py-4 flex justify-between gap-5"><span data-template-id="menu-cola-tonic" class="canva-text font-semibold"></span><span data-template-id="menu-cola-tonic-price" class="canva-text font-bold"></span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="about-screen" class="screen section-light py-16 sm:py-24" data-screen="about" hidden>
+     <div class="max-w-4xl mx-auto px-6 sm:px-10">
+      <p data-template-id="about-screen-kicker" class="canva-text text-sm font-bold uppercase tracking-[.2em] mb-3"></p>
+      <h1 data-template-id="about-screen-heading" class="canva-text display-font font-bold text-5xl sm:text-6xl"></h1>
+      <div data-template-id="about-copy-panel" class="canva-panel mt-8 border-l-4 border-[#202020] pl-6 sm:pl-8">
+       <p data-template-id="about-screen-copy" class="canva-text text-lg sm:text-xl leading-relaxed"></p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-4 mt-12">
+       <div data-template-id="about-point-one" class="canva-card border border-[#8b8b8b] p-5">
+        <p data-template-id="about-point-one-text" class="canva-text font-bold"></p>
+       </div>
+       <div data-template-id="about-point-two" class="canva-card border border-[#8b8b8b] p-5">
+        <p data-template-id="about-point-two-text" class="canva-text font-bold"></p>
+       </div>
+       <div data-template-id="about-point-three" class="canva-card border border-[#8b8b8b] p-5">
+        <p data-template-id="about-point-three-text" class="canva-text font-bold"></p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="contact-screen" class="screen section-light py-16 sm:py-24" data-screen="contact" hidden>
+     <div class="max-w-3xl mx-auto px-6 sm:px-10">
+      <p data-template-id="contact-screen-kicker" class="canva-text text-sm font-bold uppercase tracking-[.2em] mb-3"></p>
+      <h1 data-template-id="contact-screen-heading" class="canva-text display-font font-bold text-5xl sm:text-6xl"></h1>
+      <p data-template-id="contact-screen-copy" class="canva-text mt-5 leading-relaxed"></p>
+      <form id="contact-form" class="mt-10 grid gap-5" novalidate>
+       <div>
+        <label data-template-id="contact-name-label" class="canva-text block font-bold mb-2" for="contact-name"></label> <input id="contact-name" class="contact-field" type="text" autocomplete="name" required>
+       </div>
+       <div>
+        <label data-template-id="contact-email-label" class="canva-text block font-bold mb-2" for="contact-email"></label> <input id="contact-email" class="contact-field" type="email" autocomplete="email" required>
+       </div>
+       <div>
+        <label data-template-id="contact-message-label" class="canva-text block font-bold mb-2" for="contact-message"></label> <textarea id="contact-message" class="contact-field min-h-32 resize-y" required></textarea>
+       </div><button data-template-id="contact-submit-button" class="canva-button mono-button justify-self-start px-6 py-3 rounded-sm" type="submit"></button>
+       <p id="form-status" class="status-message font-semibold" aria-live="polite"></p>
+       <p data-template-id="contact-helper" class="canva-text text-sm"></p>
+      </form>
+     </div>
+    </section>
+   </main>
+   <footer data-template-id="site-footer" class="canva-footer border-t border-[#4a4a4a] text-center px-6 py-6">
+    <p data-template-id="footer-text" class="canva-text text-sm"></p>
+   </footer>
+  </div>
+  <script>
+    const screens = document.querySelectorAll("[data-screen]");
+    const navButtons = document.querySelectorAll(".nav-link");
+    const viewButtons = document.querySelectorAll("[data-view-target]");
+    const statusMessage = document.getElementById("form-status");
+    const contactForm = document.getElementById("contact-form");
+    let sheetReady = false;
+
+    function showView(viewName) {
+      screens.forEach((screen) => {
+        screen.hidden = screen.dataset.screen !== viewName;
+      });
+
+      navButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.viewTarget === viewName);
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function showFormStatus(message, isError) {
+      statusMessage.textContent = message;
+      statusMessage.style.color = isError ? "#8b1e1e" : "#1f5b35";
+    }
+
+    viewButtons.forEach((button) => {
+      button.addEventListener("click", () => showView(button.dataset.viewTarget));
+    });
+
+    async function initializeSheet() {
+      if (!window.dataSdk) {
+        showFormStatus("Messages are unavailable right now. Please try again shortly.", true);
+        return;
+      }
+
+      const initResult = await window.dataSdk.init({
+        onDataChanged() {
+          sheetReady = true;
+        }
+      });
+
+      if (!initResult.isOk) {
+        showFormStatus("Messages are unavailable right now. Please try again shortly.", true);
+        return;
+      }
+
+      sheetReady = true;
+    }
+
+    async function submitContact(event) {
+      event.preventDefault();
+
+      const submitButton = event.submitter;
+      const name = document.getElementById("contact-name").value.trim();
+      const email = document.getElementById("contact-email").value.trim();
+      const message = document.getElementById("contact-message").value.trim();
+
+      if (!name || !email || !message) {
+        showFormStatus("Please complete all three fields before sending.", true);
+        return;
+      }
+
+      if (!sheetReady || !window.dataSdk) {
+        showFormStatus("Messages are unavailable right now. Please try again shortly.", true);
+        return;
+      }
+
+      submitButton.disabled = true;
+      showFormStatus("Sending your message…", false);
+
+      try {
+        const result = await window.dataSdk.create({
+          name,
+          email,
+          message,
+          submitted_at: new Date().toISOString()
+        });
+
+        if (!result.isOk) {
+          showFormStatus("We could not confirm your message. Please try again.", true);
+          return;
+        }
+
+        contactForm.reset();
+        showFormStatus("Thanks! Your message has been sent to Tasty Treats.", false);
+      } catch (error) {
+        showFormStatus("We could not send your message. Please try again.", true);
+      } finally {
+        submitButton.disabled = false;
+      }
+    }
+
+    contactForm.addEventListener("submit", submitContact);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+      initializeSheet();
+    });
+  </script>
+ </body>
+</html>
